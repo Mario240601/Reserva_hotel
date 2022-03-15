@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="hotel.png">
+	<script type="text/javascript" src="js.js"></script>
+	<title>Hotel Emperador</title>
+	<style>
+		h1{
+			text-align: center;
+
+		}
+		
+		
+	</style>
+
+</head>
+<body bgcolor="#FF5733">
+	<h1>Hotel Emperador</h1>
+	Numero Adultos:<br><br>
+	<select id="cambia_adulto" onchange="mostrarAdultos(this);">
+				<option>0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+	</select>
+	<br>	<br>
+		<div id="adultos"></div>
+	<br>
+	Numero niños:<br><br>
+	<select id="cambia_ninio" onchange="mostrarNinios(this);">
+				<option>0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+	</select><br><br><div id="ninio"></div><br><br>
+	<input onclick="Reservar();" type="button" name="Reservar" value="Reservar">
+
+	
+
+</body>
+</html>
